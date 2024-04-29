@@ -1,5 +1,17 @@
 import styled from "styled-components";
 import { Button, SectionContainer, SectionBigHeading, SectionSubheading } from "~/components";
+import { Brief } from "../../collections/Brief";
+import { Search } from "../../collections/Search";
+
+export const StyledBrief = styled((props) => <Brief variant="contained" color="main" />)`
+  margin-top: 10rem;
+  padding-bottom: 0;
+`;
+
+export const StyledSearch = styled((props) => <Search variant="contained" color="main" />)`
+  margin-top: 10rem;
+  padding-bottom: 0;
+`;
 
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   display: flex;
@@ -27,7 +39,6 @@ font-size: 1.5rem;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
-  margin-top: 10em;
   color: black;
   width: 100%;
   font-family: sans-serif;
@@ -41,7 +52,7 @@ export const StyledEachContainer = styled(({ ...props }) => <div {...props} />)`
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
   max-width: 32.03rem;
   max-height: 65rem;
-  width: 100%;
-  height: 100%;
-  margin-right: auto;
+  width: 80%;
+  height: 80%;
+  margin-right: 40rem;
 `;
